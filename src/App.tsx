@@ -1,16 +1,25 @@
-import { Container } from './components'
-import { Contact, Experience, Footer, Hero, Projects } from './sections'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import Hero from './components/sections/Hero'
+import About from './components/sections/About'
+import Skills from './components/sections/Skills'
+import Experience from './components/sections/Experience'
+import Projects from './components/sections/Projects'
+import Blog from './components/sections/Blog'
+import Contact from './components/sections/Contact'
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <main className="flex w-full flex-1 pt-8 pb-12 sm:pt-10 sm:pb-14">
-        <Container>
-          <Hero />
-          <Experience />
-          <Projects />
-          <Contact />
-        </Container>
+    <div className="bg-slate-950 text-slate-100 min-h-screen font-sans">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Blog />
+        <Contact />
       </main>
       <Footer />
     </div>

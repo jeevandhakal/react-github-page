@@ -1,0 +1,50 @@
+import type { Project } from '../types'
+
+export const projects: Project[] = [
+  {
+    title: 'Nova Scotia Power Consumption Forecasting',
+    description: 'Time-series forecasting of NS energy demand',
+    problem: 'Predict future energy consumption from years of historical NS Power data to support planning decisions.',
+    tools: ['Python', 'Pandas', 'Facebook Prophet', 'Matplotlib'],
+    outcome: 'Built a forecasting model with seasonal decomposition that identifies demand patterns across years.',
+    githubUrl: 'https://github.com/jeevandhakal/ns-power-forecasting',
+    featured: true,
+  },
+  {
+    title: 'Nova Scotia Healthcare Data Analysis',
+    description: 'Public health trend visualization with Tableau',
+    problem: 'Raw NS public health data was hard to interpret — no visual summaries of regional trends existed.',
+    tools: ['Python', 'Pandas', 'Tableau'],
+    outcome: 'Produced interactive Tableau dashboards revealing healthcare trends across Nova Scotia regions.',
+    githubUrl: 'https://github.com/jeevandhakal/ns-healthcare-analysis',
+    featured: true,
+  },
+  {
+    title: 'Book Clustering with PySpark & Hive',
+    description: 'Large-scale book dataset clustering in a distributed environment',
+    problem: 'Organize a large unstructured book dataset into meaningful topic groups using big data tools.',
+    tools: ['PySpark', 'Apache Hive', 'Hadoop', 'K-Means'],
+    outcome: 'Successfully clustered thousands of books by topic using distributed computing on a Hadoop cluster.',
+    githubUrl: 'https://github.com/jeevandhakal/book-clustering-pyspark',
+    featured: true,
+  },
+  {
+    title: 'Sentiment Analysis with Deep Learning',
+    description: 'LSTM-based sentiment classifier on IMDb reviews',
+    problem: 'Classify movie reviews as positive or negative using NLP and deep learning.',
+    tools: ['Python', 'TensorFlow', 'LSTM', 'GloVe Embeddings'],
+    outcome: 'Trained an LSTM model with GloVe word embeddings achieving strong classification accuracy on IMDb data.',
+    githubUrl: 'https://github.com/jeevandhakal/Sentiment-Analysis-with-Deep-Learning',
+    featured: false,
+  },
+  {
+    title: 'Price Comparison Web App',
+    description: 'Real-time scraper comparing prices across Nepali e-commerce sites',
+    problem: 'Users had no single place to compare product prices across Daraz, Sastodeal, and Dealayo.',
+    tools: ['Python', 'Django', 'BeautifulSoup', 'Playwright', 'SQLite'],
+    outcome: 'Built a live web app that scrapes, merges, and sorts results from 3 sites — with wishlist and price tracking.',
+    githubUrl: 'https://github.com/jeevandhakal/price_comparison',
+    liveUrl: 'https://compareit.pythonanywhere.com',
+    featured: false,
+  },
+]
